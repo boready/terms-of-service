@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Success</title>
+</head>
+<body>
+  <h1>Login Successful</h1>
+  <p>You have successfully logged in via TikTok.</p>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+    console.log("Authorization Code:", code);
+  </script>
+</body>
+</html>
