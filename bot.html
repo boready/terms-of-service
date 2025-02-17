@@ -37,15 +37,36 @@
         a:hover {
             text-decoration: underline;
         }
+        .login-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #ff0050;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .login-btn:hover {
+            background-color: #cc0040;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to TikTokBot</h1>
         <p>Automate your posting, liking, and sharing of racing-related shorts, highlights, and viral content on TikTok.</p>
+        
         <a href="https://boready.github.io/terms-of-service/" target="_blank">Terms of Service</a>
         <a href="https://boready.github.io/terms-of-service/privacy-policy.html" target="_blank">Privacy Policy</a>
+
         <p>For more information, contact us at <strong>bo.ready@yahoo.com</strong></p>
+
+        <!-- TikTok Login Button -->
+        <a class="login-btn" href="https://www.tiktok.com/auth/authorize?client_key=YOUR_CLIENT_KEY&response_type=code&redirect_uri=http://localhost:3000/callback&scope=user.info.basic,video.upload,video.publish">
+            Login with TikTok
+        </a>
     </div>
 </body>
 </html>
+
